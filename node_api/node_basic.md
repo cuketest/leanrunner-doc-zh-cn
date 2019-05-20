@@ -6,11 +6,11 @@
 const { TestModel, Auto } = require('leanpro.win');
 ```
 
-## Auto
+### Auto
 
 Auto对象用来通过[描述模式](descriptive_mode.md)获取测试对象，无需加载对象模型。
 
-## TestModel
+### TestModel
 
 TestModel是对象模型，该类有下面的方法：
 
@@ -23,7 +23,7 @@ class TestModel {
 
 * **loadModel**
 
-loadModel从文件加载对象模型文件并返回模型对象。对象模型是以\*.tmodel为结尾的文件。下面是调用样例：
+loadModel从文件加载对象模型文件并返回模型对象。对象模型是以*.tmodel为结尾的文件。下面是调用样例：
 
 ```javascript
 const { TestModel } = require("leanpro.win");
@@ -39,4 +39,6 @@ run();
 * **bindToProcess**
 
 bindToProcess用来将模型绑定到一个被自动化应用的进程。在操作的时候即使有多个相同的应用实例，运行时也只会选择绑定的应用操作。
+
+
 

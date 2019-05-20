@@ -15,13 +15,14 @@
 2. "leanpro.common"
 
    "leanpro.common"包内置了Node.js的工具类API函数：
-
-   * [Util \(常用工具函数）](util.md)
+   * [Util (常用工具函数）](util.md)
 
 3. "leanpro.visual"
 
    这个包内置了图像和OCR识别的相关功能：
-
-   * [图像字符识别\(OCR\)](ocr.md)
+   * [图像字符识别(OCR)](ocr.md)
    * [图像操作API](image.md)
+
+
+   
 

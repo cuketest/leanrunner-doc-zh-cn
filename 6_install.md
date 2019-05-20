@@ -1,7 +1,6 @@
 # 安装
 
 ## LeanRunner Lite
-
 从Windows 10的应用商店安装。Windows应用商店也会自动安装程序的更新版本。
 
 ## LeanRunner
@@ -10,15 +9,18 @@ LeanRunner是全功能版，可在各个版本的Windows 上运行，包括Windo
 
 安装程序通过定义选项，可以安装不同部分：
 
-![](.gitbook/assets/02-install-01.png)
+![](/assets/02-install-01.png)
 
 其中安装模块有：
 
-• 基础部分：必装，包括Model Manager\(应用模型管理器\)，执行引擎等 • 帮助文档 • 样例：演示的被测样例程序、及测试脚本 • Visual Studio集成：跟Visual Studio集成的部分，可集成到Visual Studio 2015、2013、2012等版本。如果系统上未安装这些版本的Visual Studio，则不显示该安装选项。
+•	基础部分：必装，包括Model Manager(应用模型管理器)，执行引擎等
+•	帮助文档
+•	样例：演示的被测样例程序、及测试脚本
+•	Visual Studio集成：跟Visual Studio集成的部分，可集成到Visual Studio 2015、2013、2012等版本。如果系统上未安装这些版本的Visual Studio，则不显示该安装选项。
 
 安装程序结束时可以选择 “启动LeanRunner”去启动应用程序：
 
-![](.gitbook/assets/02-install-02.png)
+![](/assets/02-install-02.png)
 
 ## 启动LeanRunner
 

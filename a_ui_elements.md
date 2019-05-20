@@ -3,82 +3,74 @@
 ## 1. 菜单栏
 
 #### 文件
-
 提供文件系列操作功能
-
-* 新建： 新建一个文件
-* 打开： 打开一个文件
-* 保存： 保存文件
-* 保存为….： 保存为一个新的文件
-* 关闭： 关闭文件
-* 打开文件目录： 打开测试模型所在的文件目录
-* 退出： 退出LeanRunner
+- 新建： 新建一个文件
+- 打开： 打开一个文件
+- 保存： 保存文件
+- 保存为….： 保存为一个新的文件
+- 关闭： 关闭文件
+- 打开文件目录： 打开测试模型所在的文件目录
+- 退出： 退出LeanRunner
 
 ### 操作
-
 提供对元素控件操作的系列方法
 
-![image](.gitbook/assets/050202-cao-zuo.png)
-
-* 批量添加：同时添加选中的元素以及此元素的临近元素
-* 高亮： 高亮显示选中的元素
-* 选项：    对高亮部分和生成部分进行设置
-* 抓取截图： 选取元素自动截屏
-* 选中时高亮：选中元素的时候高亮显示
+![image](/assets/05-02-02操作.png)
+- 批量添加：同时添加选中的元素以及此元素的临近元素
+- 高亮： 高亮显示选中的元素
+- 选项：	对高亮部分和生成部分进行设置
+- 抓取截图： 选取元素自动截屏
+- 选中时高亮：选中元素的时候高亮显示
 
 ### 帮助
-
-![image](.gitbook/assets/050203-bang-zhu.png)
-
-* 查看帮助： 查看帮助文件
+![image](/assets/05-02-03帮助.png)
+- 查看帮助： 查看帮助文件
 
 ## 2. 工具条面板
+![image](/assets/05-03-00banner.png)
 
-![image](.gitbook/assets/05-03-00banner.png)
-
-> ![image](.gitbook/assets/05-03-02newfile.png) 创建新的模型文件 ![image](.gitbook/assets/05-03-01open.png) 打开已存在的模型文件 ![image](.gitbook/assets/05-03-04save.png) 保存文件 ![&#xF06C;](.gitbook/assets/03-kong-jian-01.png) 添加元素 ![&#xF06C;](https://github.com/cuketest/leanrunner-user-guide/tree/42ef225046438919f632653cc26a4c8ab7344f4d/assets/04-09-批量添加.png) 批量添加元素 ![image](.gitbook/assets/05-03-05delete.png) 删除当前元素 ![image](.gitbook/assets/0401-gao-liang%20%281%29.png) 高亮显示元素控件
+>![image](/assets/05-03-02newfile.png)	创建新的模型文件
+>![image](/assets/05-03-01open.png) 打开已存在的模型文件
+>![image](/assets/05-03-04save.png) 保存文件
+>![](/assets/03-控件-01.png)	添加元素
+>![](/assets/04-09-批量添加.png) 批量添加元素
+>![image](/assets/05-03-05delete.png)	删除当前元素
+>![image](/assets/04-01-高亮.png) 高亮显示元素控件
 
 ### 对象树形结构
-
-![image](.gitbook/assets/05-04-01tree.png)
-
-* 搜索框： 当树形结构有较多测试对象时，输入关键字可以快速匹配元素
-* 元素树形结构： 元素控件结构
-* 名字： 元素控件名字
-* 类型： 元素类型
-* 缩略图：被识别到的元素控件缩略图
+![image](/assets/05-04-01tree.png)
+- 搜索框： 当树形结构有较多测试对象时，输入关键字可以快速匹配元素
+- 元素树形结构： 元素控件结构
+- 名字： 元素控件名字
+- 类型： 元素类型
+- 缩略图：被识别到的元素控件缩略图
 
 ### 识别属性
-
 当前元素控件相关属性
 
-![image](.gitbook/assets/0505-shi-bie-shu-xing.png)
+![image](/assets/05-05识别属性.png)
+>![image](/assets/03-控件-01.png)	为当前元素添加新的属性，属性必须为已经识别到的缓存属性，或者Index属性。当其它属性不能唯一标识对象时，Index属性可以从中选取第n个对象。Index属性从0开始。
+![image](/assets/05-03-05delete.png) 删除当前元素的属性
+![image](/assets/04-01-高亮.png) 高亮显示元素
+![image](/assets/05-05-01刷新元素.png) 重新更新应用中元素属性
 
-> ![image](.gitbook/assets/03-kong-jian-01%20%281%29.png) 为当前元素添加新的属性，属性必须为已经识别到的缓存属性，或者Index属性。当其它属性不能唯一标识对象时，Index属性可以从中选取第n个对象。Index属性从0开始。 ![image](.gitbook/assets/05-03-05delete%20%281%29.png) 删除当前元素的属性 ![image](.gitbook/assets/0401-gao-liang.png) 高亮显示元素 ![image](.gitbook/assets/050501-shua-xin-yuan-su.png) 重新更新应用中元素属性
 
 ## 3. 控件操作
-
 提供此元素可以进行操作的方法。
 
-![image](.gitbook/assets/050601-fang-fa-cao-zuo.png)
+![image](/assets/05-06-01方法操作.png)
+>![image](/assets/04-06-复制生成代码.png)选中方法，自动将方法代码拷贝到粘贴板中
+![image](/assets/04-03-copy.png)将整个元素模型加载方法拷贝到粘贴板中
+- 方法
+选中的元素，LAP会自动将此元素支持的操作方法罗列出来，鼠标点击具体方法，最下边信息栏显示具体描述。
 
-> ![image](.gitbook/assets/0406-fu-zhi-sheng-cheng-dai-ma.png)选中方法，自动将方法代码拷贝到粘贴板中 ![image](.gitbook/assets/04-03-copy.png)将整个元素模型加载方法拷贝到粘贴板中
->
-> * 方法
->
->   选中的元素，LAP会自动将此元素支持的操作方法罗列出来，鼠标点击具体方法，最下边信息栏显示具体描述。
-
-* 属性
-
-  选中的元素控件自身属性。
-
-  除了复制成员函数的方法外，还可以直接将代码拖拽到编辑器中。
-
-  ![image](.gitbook/assets/050602-shu-xing.png)
+- 属性
+选中的元素控件自身属性。
+除了复制成员函数的方法外，还可以直接将代码拖拽到编辑器中。
+![image](/assets/05-06-02属性.png)
 
 ### 控件截屏
 
 显示元素的截屏信息
 
-![image](.gitbook/assets/050603-jie-ping.png)
-
+![image](/assets/05-06-03截屏.png)
