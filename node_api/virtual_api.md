@@ -17,12 +17,13 @@
 
    在代码中你可以直接调用某个对象的getVirtual()方法而不带任何参数，这时创建的虚拟控件区域同该对象对应控件的大小一致。这种方式一般用来在某个Windows控件上做图像识别或OCR操作。
    
-   例如你可以调用：
+   例如，针对Win10的计算器，你可以调用：
    ```javascript
    let numPad = model.getGeneric("Number pad").getVirtual();
    await numPad.clickVisualText('4');
    ```
    这个例子从计算器应用的数字面板控件获得虚拟控件，并通过OCR识别上面的数字"4"来直接点击这个数字按钮。
+   注意：对于其它Windows版本的计算器应用，代码可能有所不同。
 
 ### 方法及属性
 

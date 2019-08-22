@@ -128,6 +128,8 @@ Image对象的imageEqual和imageCompare分别针对上面两种对比方式。
       * **pixelNumberTolerance**：像素数量容忍度，没有缺省值。
       * **pixelPercentTolerance**：像素百分比容忍度，缺省为1，即1%。例如，两幅图片分别有10000像素，如果允许少于150个像素不同的情况下认为图片相同，则设置为1.5。
       * **ignoreExtraPart**：是否忽略非重叠部分，缺省为false。两幅比较图片可以是不同尺寸，比较时左上角对齐，超出部分会当成是不同的点。如果设成true，则会忽略超出部分。
+    
+    当pixelNumberTolerance和pixelPercentTolerance有一个超出了设定值（或缺省值）比较就会返回false。如果只需要使用其中一个设定，可以将另一个设定设为比较大的值。例如只需要pixelNumberTolerance，并忽略pixelPercentTolerance，可以把pixelPercentTolerance设成100。
 
   * 除了返回值表示是否相同外，有时需要知道详细的信息，例如像素尺寸，有多少点不同，不同的点的百分比等，这时可以通过传出compareInfo对象获得相关信息。
     
@@ -214,6 +216,8 @@ Image对象的imageEqual和imageCompare分别针对上面两种对比方式。
   * **equal**表示是否根据容忍度设置认为图片相同。
   * **info**的结构与imageEqual的compareInfo结构相同，包括像素尺寸，有多少点不同，不同的点的百分比等。
   * **diffImage**是返回的差分图片的Image对象，相同的像素点以缺省白色表示，不同的点显示为红色。图像中原有的图案会以浅色显示在目标图片中，方便定位差异部分所在的位置。
+
+这两个图片比较API中，imageEqual是imageCompare的封装，为了更直观的返回两个图片是否相等的判断结果。如果只想知道是否相等就用imageEqual，如果除了是否相等外，还想知道更详细的就用imageCompare。
 
 #### 示例
 

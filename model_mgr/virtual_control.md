@@ -28,13 +28,13 @@
 3. 选择对齐的方式。例如Book控件选择的是靠右下对齐，这样，当窗体伸缩时，虚拟控件仍旧在右下角对应的位置点击这个图标。
 4. 点击确定保存这些虚拟控件。
 
-回到模型编辑器界面：
+回到模型管理器界面：
 
 ![](assets/virtual_control_model.png)
 
 可以看到：
-* 虚拟控件在父控件(Panel)中的位置
-* 虚拟控件的方法，包括click、dblClick、wheel。
+* 虚拟控件在父控件(Custom)中的位置
+* 虚拟控件的方法，包括click、dblClick、wheel、clickVirtualText、getVirtualText、findSnapshot等
 
 为虚拟控件生成代码后如下:
 

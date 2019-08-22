@@ -1,6 +1,12 @@
-# 脚本编辑器
+# 代码编辑调试
 
-脚本编辑器是自动化的开发环境，可编辑Node.js的自动化脚本，同时它也支持VBScript、JavaScript(WScript)脚本的开发。注意您使用的如果是LeanRunner Lite，则只能运行Node.js。它提供了多种功能，包括项目管理、运行、智能提示、脚本验证等功能。
+### 工具箱
+
+设计器提供了代码工具箱，如下图：
+
+![](assets/code_toolbox.png)
+
+能够通过拖拽对应的工具条，实现代码的快速生成。
 
 ### 智能提示
 通过require调用引入"leanpro.win"库，可以访问到TestModel的对象模型，并获得智能提示。
