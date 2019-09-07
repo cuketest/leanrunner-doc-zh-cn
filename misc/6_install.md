@@ -1,11 +1,11 @@
-# 安装
+# LeanRunner设计器安装
 
 ## LeanRunner Lite
 从Windows 10的应用商店安装。Windows应用商店也会自动安装程序的更新版本。
 
 ## LeanRunner
 
-LeanRunner是全功能版，可在各个版本的Windows 上运行，包括Windows 7、8、10等系统。它的安装包是msi文件
+LeanRunner设计器可在各个版本的Windows 上运行，包括Windows 7、8、10等系统。它的安装包是msi文件
 
 安装程序通过定义选项，可以安装不同部分：
 
@@ -22,7 +22,7 @@ LeanRunner是全功能版，可在各个版本的Windows 上运行，包括Windo
 
 ![](/assets/02-install-02.png)
 
-## 启动LeanRunner
+## 启动LeanRunner设计器
 
 安装好之后，可以在开始菜单中点击 “LeanRunner设计器”启动应用，开始编辑脚本。
 

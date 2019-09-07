@@ -1,6 +1,6 @@
 # 演练：自动化Windows计算器的操作
 
-本文将教会您通过LeanRunner创建Windows计算器应用的RPA自动化脚本，并在服务器上执行。
+本文将教会您通过LeanRunner创建Windows计算器应用的RPA自动化脚本，并在控制器上设置它的执行。
 
 ## 建立项目及框架
 

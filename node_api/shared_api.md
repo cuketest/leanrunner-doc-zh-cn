@@ -59,6 +59,8 @@ dblClick(x?: number, y?: number, mousekey?: MouseKey): Promise<void>;
    ```
 上面的例子中exists里面20就是在20秒里自动循环等待，如果控件存在，会立刻返回true，如果控件不存在，在20秒超时后会返回false。用户可以根据控件出现的时间长短以及控件识别的时间，调整等待的秒数。
 
+<a id="takeScreenshots"></a>
+
 #### takeScreenshots
 
 ```javascript
