@@ -34,6 +34,7 @@
     * [样例](/misc/7_use_samples.md)
     * [演练：自动化Windows计算器的操作](/walk/calc.md)
 8. [附录](/a_ui_elements.md)
+    * [离线环境安装npm包](/shared/npm_offline.md)
     * [VBScript API提示](/misc/4_1_vbscript_apis.md)
     * [Visual Studio IDE集成](/misc/5_vs_integrate.md)
     * [界面元素说明](/a_ui_elements.md)
