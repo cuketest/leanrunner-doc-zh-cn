@@ -16,6 +16,7 @@ class Util {
     static stopProcess(proc: ChildProcess): boolean;
     static takeScreenshot(filePath: string = null, monitor: number = 0): string | void;
     static loadCsvFile(filePath: string): Promise<RowCsv[]>;
+    static saveToCsvFile(rows: RowCsv[], filePath: string): boolean;
 }
 ```
 
@@ -100,3 +101,26 @@ Art,Venere,"Chemel, James L Cpa",NJ,8014
   zip: '8014' } 
 ]
 ```
+
+* **saveToCsvFile**  
+
+在得到json格式的数据后，可以再使用`saveToCsvFile(rows, filePath)`函数将数据保存为csv文件。
+
+```javascript
+    function saveToCsvFile(rows: RowCsv[], filePath: string): boolean;
+```
+
+  * 参数`rows`为行数据，它的键为列名，值为单元格中的元素；
+  * 参数`filePath`为保存的路径和文件名；  
+
+举个例子，我们需要将从上一步`data.csv`文件中读取的数据保存为脚本所在根目录的`data_bak.csv`文件中，代码如下：
+
+```js
+(async function() {
+    let data = await Util.loadCsvFile('C:\\temp\\data.csv');
+    // console.log(data);
+    Util.saveToCsvFile(data, "./data_bak.csv");
+})();
+```  
+
+运行结束后可以在根目录下看到新生成的`data_bak.csv`文件，打开可以看到里面的内容和上一步的`data.csv`文件内容一致。
