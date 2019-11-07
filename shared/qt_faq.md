@@ -58,4 +58,9 @@
 
 **A** 可以通过先dblClick双击控件的前部，然后pressKeys输入日期内容。
 
+<a id="qt_table"></a>
+### Q: Qt中Table控件，如何动态的访问它的行、列、单元格？
+
+**A** 查看[Qt中Table的自动化](qt/qt_table.md)，获得更详细的帮助。
+
 
