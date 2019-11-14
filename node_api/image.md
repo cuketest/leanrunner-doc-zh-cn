@@ -266,9 +266,8 @@ Windows自动化中一个常见的场景是，将运行时控件的截屏与模�
 
 ```javascript
 const { Image } = require('leanpro.visual');
-const fs = require('fs')
-const { Image } = require('leanpro.visual');
 const { TestModel } = require('leanpro.win');
+const fs = require('fs');
 
 const model = TestModel.loadModel(__dirname + "\\test.tmodel");
 

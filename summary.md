@@ -24,6 +24,7 @@
     * [互操作API库](/shared/orchestrate.md)
         * [数据库访问](/shared/database.md)
         * [Excel的读取](/shared/excel.md)
+    * [离线环境安装npm包](/shared/npm_offline.md)
     * [QT自动化常见问题](/shared/qt_faq.md)
         * [Qt中Table的自动化](/shared/qt/qt_table.md)
     * [Windows应用自动化常见问题](/shared/win_faq.md)
