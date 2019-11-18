@@ -16,6 +16,7 @@
     * [基本操作API](/node_api/node_basic.md)
     * [对象操作API](/node_api/node_operations.md)
     * [获取对象API](/node_api/node_container.md)
+    * [Java应用自动化](/node_api/java/java_basic.md)
     * [虚拟控件API](/node_api/virtual_api.md)
     * [描述模式](/node_api/descriptive_mode.md)
     * [图像字符识别(OCR)](/node_api/ocr.md)
