@@ -84,21 +84,21 @@ Art,Venere,"Chemel, James L Cpa",NJ,8014
 
 ```json
 [
-{ first_name: 'James',
-  last_name: 'Butt',
-  company_name: 'Benton, John B Jr',
-  state: 'LA',
-  zip: '70116' },
-{ first_name: 'Josephine',
-  last_name: 'Darakjy',
-  company_name: 'Chanay, Jeffrey A Esq',
-  state: 'MI',
-  zip: '48116' },
-{ first_name: 'Art',
-  last_name: 'Venere',
-  company_name: 'Chemel, James L Cpa',
-  state: 'NJ',
-  zip: '8014' } 
+{ "first_name": "James",
+  "last_name": "Butt",
+  "company_name": "Benton, John B Jr",
+  "state": "LA",
+  "zip": "70116" },
+{ "first_name": "Josephine",
+  "last_name": "Darakjy",
+  "company_name": "Chanay, Jeffrey A Esq",
+  "state": "MI",
+  "zip": "48116" },
+{ "first_name": "Art",
+  "last_name": "Venere",
+  "company_name": "Chemel, James L Cpa",
+  "state": "NJ",
+  "zip": "8014" } 
 ]
 ```
 

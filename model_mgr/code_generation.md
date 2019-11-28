@@ -19,17 +19,10 @@
 
 会生成如下类似的代码：
 
-1. Node.js
+
    ```javascript
       const { TestModel } = require("leanpro.win");
       var model = TestModel.loadModel("C:\\temp\\vbtest\\BuildYourOffice.tmodel");
-   ```
-2. VBScript (适用LeanRunner):
-   ```VBScript
-   Dim auto
-   Set auto = CreateObject("Win.Automation")
-   Dim model
-   auto.LoadModel("C:\\temp\\vbtest\\BuildYourOffice.tmodel")
    ```
 
 ## 模型依赖代码和描述模式代码
@@ -38,8 +31,8 @@
 * **模型依赖代码**：这类代码是需要加载模型的，调用语句通过名称寻找模型中的对象。
 例如下面的语句，从模型中寻找“SimpleStyles”Window对象，然后在这个父对象下面找“Normal1”CheckBox对象，找到后点击这个Checkbox
 
-```VBScript
-model.GetWindow("SimpleStyles").GetCheckBox("Normal1").Click 0, 0, 1
+```javascript
+   await model.getWindow("SimpleStyles").getCheckBox("Normal1").click();
 ```
 
 * **描述模式代码**：描述模式是指被测对象的属性信息都在代码中描述。
@@ -72,4 +65,4 @@ LeanRunner中，模型管理器支持多种语言，因此，生成代码之前�
 
 ![](assets/4.4_option.png)
 
-在CukeTest和LeanRunner Lite中，该选项只读，因为它们只支持Node.js。
+在CukeTest和LeanRunner中，该选项只读，因为它们只支持Node.js。
