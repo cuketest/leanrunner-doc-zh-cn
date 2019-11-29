@@ -1,5 +1,9 @@
 ## QT自动化常见问题
 
+<a id="unrecognized_qt_type"></a>
+#### Q: 无法识别Qt应用的控件类型
+
+**A** 在对Qt 4.x编写的应用进行控件识别时，有时会出现模型管理器无法识别出控件类型的情况，全部显示为`Custom`类型，这是由于缺少了**accessible**插件，解决方案详见[无法识别Qt应用的控件类型](qt_accessible.md)。
 
 <a id="tree_expand"></a>
 #### Q: 为什么Tree 控件的Collapse和Expand方法调用不成功？
