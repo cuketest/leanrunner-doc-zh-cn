@@ -25,8 +25,8 @@ Qt 5.x:
 ```
 从模型管理器识别到的测试对象树中也可以看出来表格中的结构。  
 
-![Qt 4.x SpreadSheet中识别到的对象树](assets/nodeTree.png)  
-![Qt 5.x SpreadSheet中识别到的对象树](assets/nodeTree_Qt5.png)  
+![Qt 4.x SpreadSheet中识别到的对象树](assets/nodetree_model.png)  
+![Qt 5.x SpreadSheet中识别到的对象树](assets/nodetree_qt5.png)  
 
 由于结构的不同，获取这些单元格，也就是`DataItem`控件的方法也有细微的区别。  
 
@@ -39,7 +39,7 @@ Qt 5.x:
 仍旧使用`get[ControlType]`API，具体查看[获取对象API](/node_api/node_container.md)，在获取模型对象时动态提供index属性，例如，已知目标单元格的位置信息，比如n行m列。假设我们需要获取表格中`A6`单元格的控件对象，可以直接利用位置信息来获取，代码如下：
 
 ```js
-    target = {
+    let target = {
         row: 6,
         column: 0
     }
@@ -52,6 +52,7 @@ Qt 5.x:
 ![image](assets/method1_result.png)  
 
 如果是Qt 5.x版本，由于缺少了行控件，因此直接从`Table`控件下直接取到所有的`DataItem`控件的对象以数组的形式储存，取出目标控件需要把位置信息换算：
+
 ```js
     let target = {
         row: 5, 
@@ -61,7 +62,7 @@ Qt 5.x:
     console.log(await cell.name())
 ```
 
-该代码获取的是第6行第1个单元格的对象控件。关于控件的索引值需要结合父控件和控件类型进行理解，这里行索引值为6的`Custom`控件（即行控件）正好指向第6行的原因，是由于表格中的横坐标尺（A、B、C...）是作为表内第一个`Custom`控件，索引值为0；那又为什么第1个单元格的索引值为0呢？这是因为单元格的控件类型为`DataItem`，而其父控件为`Custom`，并且其头部，也就是纵坐标尺的控件类型是`Header`，因为我们获取的是第一个`DataItem`控件，因此直接使用0来索引即可。总而言之，**对指定类型控件的索引是在父控件下、同种类型控件列表中索引的**。
+该代码获取的是第6行第1个单元格的对象控件。Table控件中每行有6个DataItem, 那么第n行m列的单元格控件为索引为（n * 6 + m）个DataItem控件。
 
 ![image](assets/sheet_ruler_custom.png)  
 
@@ -70,23 +71,26 @@ Qt 5.x:
 上述方法能够拿到单个的单元格控件，然后操作这个单元格。有时我们需要批量操作多个单元格。这时候可以利用getControls方法，它可以返回一组符合过滤条件的子控件。
 
 如需要遍历表格获取符合条件的单元格，那么就可以先取到所有控件对象，再筛选出满足条件的对象。假设我们需要输出表格中所有价格大于0的项目，就可以取出所有控件，经过筛选后输出，代码如下：
+
 ```js
     let table = await model.getTable("Table");
-    let rows = await table.getControls({type:"Custom"});
+    let rows = await table.getControls({ type: "Custom" });
     await rows.map(async (row) => {
         let cells = await row.getControls({ type: "DataItem" });
         let price = await cells[2].value();
         if(parseInt(price) > 0) {
-            let cell = await cells[0].value();
-            console.log(cell, ":", price);
+            let item = await cells[0].value();
+            console.log(item, ":", price);
         }
+    });
 ```
+
 结果如下：  
 
 ![image](assets/method2_result.png)  
 
 在运行中会报一个`warning`，这是因为第一个行控件中不存在`DataItem`控件从而导致警告信息。  
-上述代码是先获取到全部的行控件，再对每一个行控件，拿到它所有的单元格控件，然后再通过索引访问中间需要的控件。比如已知价格`Price`列在第三列，因此索引值为2，而项目名`Item`列在第一列，因此索引值为0。通过这些索引值来取出相应的值。
+上述代码是先获取到全部的行控件，再对每一个行控件，拿到它所有的单元格控件，然后再通过索引访问中间需要的控件。比如已知价格**Price**列在第三列，因此索引值为2，而项目名**Item**列在第一列，因此索引值为0。通过这些索引值来取出相应的值。
 
 ### 总结
 

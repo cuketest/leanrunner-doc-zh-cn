@@ -15,6 +15,7 @@ export interface IWinControl extends IWinContainer {
   vScroll(value: any): Promise<void>;
   getProperty(propertyIds: PropertyIds): Promise<string | boolean | number>;
   waitProperty(propertyIds: PropertyIds, value: string, timeoutSeconds: number): Promise<boolean>
+  moveMouse(x?: number, y?: number): Promise<void>;
   drop(x?: number, y?: number): Promise<void>;
   drag(x?: number, y?: number): Promise<void>;
   pressKeys(keys: string): Promise<void>;

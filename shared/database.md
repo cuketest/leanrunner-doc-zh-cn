@@ -53,7 +53,7 @@
     let res = await mysql.query(conn, "select * from Users");
 ```
 
-结合上一步创建的数据库连接，并填写在`async`函数体内部，最后将查询结果打印输出到控制台，完整代码如下：
+结合前一步创建的数据库连接，将上面填写在`async`函数体内部，并将查询结果打印输出到控制台，形成的完整代码如下：
 
 ```js
     const mysql = require('leanpro.mysql');
@@ -74,6 +74,7 @@
 ```  
 
 运行结果与你的SQL和数据内容相关，以下只是范例：
+
 ```json
     [{
         "UserId": 1,

@@ -6,3 +6,4 @@
 * [QT自动化常见问题](qt_faq.md)
 * [Windows文本框控件的输入](howto_edit_set.md)
 * [Qt中Table的自动化](qt/qt_table.md)
+* [无法识别Qt应用的控件类型](qt/qt_accessible.md)
