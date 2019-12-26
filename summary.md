@@ -50,3 +50,4 @@
     * [使用技巧](/a_tips.md)
     * [词汇解释](/a_vocabularies.md)
     * [输入键对应表](/misc/key_codes.md)
+    * [错误代码及解释](/shared/error_codes.md)
