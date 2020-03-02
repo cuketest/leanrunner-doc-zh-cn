@@ -54,4 +54,10 @@ npm install selenium-webdriver-4.0.0-alpha.5.tgz
 
 即可将库文件安装成功。
 
+有些npm包安装时会自动从网上下载更新，这时候离线安装需要带上一定的参数，否则可能会不成功。例如'chromedriver'，如安装离线包可以带上参数：
 
+```
+npm install chromedriver --chromedriver_skip_download=true
+```
+
+具体参数及意义可参照npm包的文档（[https://www.npmjs.com/package/chromedriver](https://www.npmjs.com/package/chromedriver)。

@@ -19,6 +19,8 @@
     * [互操作API库](/shared/orchestrate.md)
         * [数据库访问](/shared/database.md)
         * [Excel的读取](/shared/excel.md)
+        * [Pdf的读取](/shared/pdf.md)
+        * [发送邮件](/shared/mailer.md)
     * [离线环境安装npm包](/shared/npm_offline.md)
     * [自动化常见问题](/shared/auto_faq.md)
         * [Windows应用自动化常见问题](/shared/win_faq.md)
