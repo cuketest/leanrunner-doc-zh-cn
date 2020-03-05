@@ -13,10 +13,9 @@ LeanRunner设计器可在各个版本的Windows 上运行，包括Windows 7、8�
 
 其中安装模块有：
 
-•	基础部分：必装，包括LeanRunner设计器、Model Manager(应用模型管理器)，执行引擎等
+•	基础部分：必装，包括LeanRunner设计器、Model Manager(应用模型管理器)、执行引擎、机器人等
 •	帮助文档
 •	样例：演示的被测样例程序、及测试脚本
-•	Visual Studio集成：跟Visual Studio集成的部分，可集成到Visual Studio 2015、2013、2012等版本。如果系统上未安装这些版本的Visual Studio，则不显示该安装选项。
 
 安装程序结束时可以选择 “启动LeanRunner”去启动应用程序：
 
