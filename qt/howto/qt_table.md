@@ -1,7 +1,7 @@
-# Qt中Table的自动化
+# HOWTO: Qt中Table的自动化
 
 这里会介绍Qt中Table控件的自动化。我们以Qt Demo提供的SpreadSheet为例进行讲解。
-![iamge](assets/spread_sheet_gui.png)  
+![iamge](assets/table/spread_sheet_gui.png)  
 
 ### Table控件特点
 
@@ -25,8 +25,8 @@ Qt 5.x:
 ```
 从模型管理器识别到的测试对象树中也可以看出来表格中的结构。  
 
-![Qt 4.x SpreadSheet中识别到的对象树](assets/nodetree_model.png)  
-![Qt 5.x SpreadSheet中识别到的对象树](assets/nodetree_qt5.png)  
+![Qt 4.x SpreadSheet中识别到的对象树](assets/table/nodetree_model.png)  
+![Qt 5.x SpreadSheet中识别到的对象树](assets/table/nodetree_qt5.png)  
 
 由于结构的不同，获取这些单元格，也就是`DataItem`控件的方法也有细微的区别。  
 
@@ -49,7 +49,7 @@ Qt 5.x:
 ```
 结果如下：  
 
-![image](assets/method1_result.png)  
+![image](assets/table/method1_result.png)  
 
 如果是Qt 5.x版本，由于缺少了行控件，因此直接从`Table`控件下直接取到所有的`DataItem`控件的对象以数组的形式储存，取出目标控件需要把位置信息换算：
 
@@ -64,7 +64,7 @@ Qt 5.x:
 
 该代码获取的是第6行第1个单元格的对象控件。Table控件中每行有6个DataItem, 那么第n行m列的单元格控件为索引为（n * 6 + m）个DataItem控件。
 
-![image](assets/sheet_ruler_custom.png)  
+![image](assets/table/sheet_ruler_custom.png)  
 
 ### 方法2: 通过getControls调用动态拿到控件数组，批量操作
 
@@ -87,7 +87,7 @@ Qt 5.x:
 
 结果如下：  
 
-![image](assets/method2_result.png)  
+![image](assets/table/method2_result.png)  
 
 在运行中会报一个`warning`，这是因为第一个行控件中不存在`DataItem`控件从而导致警告信息。  
 上述代码是先获取到全部的行控件，再对每一个行控件，拿到它所有的单元格控件，然后再通过索引访问中间需要的控件。比如已知价格**Price**列在第三列，因此索引值为2，而项目名**Item**列在第一列，因此索引值为0。通过这些索引值来取出相应的值。
