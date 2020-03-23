@@ -1,11 +1,13 @@
-# LeanRunner设计器安装
+# LeanRunner的安装
+
+本文描述LeanRunner客户端的安装，包括设计器和机器人。如要了解控制器的安装，请参考[LeanRunner控制器的安装](/server/controller_install.md)
 
 ## LeanRunner Lite
 从Windows 10的应用商店安装。Windows应用商店也会自动安装程序的更新版本。
 
 ## LeanRunner
 
-LeanRunner设计器可在各个版本的Windows 上运行，包括Windows 7、8、10等系统。它的安装包是msi文件
+LeanRunner桌面版可在各个版本的Windows 上运行，包括Windows 7、8、10等系统。它的安装包是msi文件。
 
 安装程序通过定义选项，可以安装不同部分：
 

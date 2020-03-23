@@ -44,7 +44,7 @@
     * [LeanRunner控制器的安装](/server/controller_install.md)
     * [LeanRunner机器人](/server/robot.md)
 7. [安装与样例](/misc/install.md)
-    * [安装](/misc/6_install.md)
+    * [LeanRunner的安装](/misc/6_install.md)
     * [样例](/misc/7_use_samples.md)
     * [演练：自动化Windows计算器的操作](/walk/calc.md)
 8. [附录](/a_ui_elements.md)
