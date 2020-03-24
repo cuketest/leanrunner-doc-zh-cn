@@ -37,7 +37,7 @@
     ```javascript
         
     async function addSample() {
-        await stepGroup(`计算器数学计算：4 + 5`, async () => {
+        await scenario(`计算器数学计算：4 + 5`, async () => {
             const expected = 4 + 5;
             await step(`点击数字4`, async (world) => {
             })
@@ -69,7 +69,7 @@
     ```javascript
     async function addSample() {
         const expected = 4 + 5;
-        await stepGroup("计算器数学计算：4 + 5", async () => {
+        await scenario("计算器数学计算：4 + 5", async () => {
             await step("点击数字4", async (world) => {
                 await model.getButton("四").click();
             })
@@ -126,7 +126,7 @@
         const expected = a + b;
         const numberMap = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"];
 
-        await stepGroup(`计算器数学计算：${a} + ${b}`, async () => {
+        await scenario(`计算器数学计算：${a} + ${b}`, async () => {
             await step(`点击数字${a}`, async (world) => {
                 await model.getButton(numberMap[a]).click();
             })
@@ -212,7 +212,7 @@
 将所有步骤描述修改为`defineStep`预定义的格式后，完整的代码如下，或者查看根目录下的`main_finally.js`文件：
 
 ```javascript
-    const { defineStep, step, stepGroup, Workflow } = require('leanrunner');
+    const { defineStep, step, scenario, Workflow } = require('leanrunner');
     const { TestModel, Auto } = require('leanpro.win');
     const { Util } = require('leanpro.common');
     const assert = require('assert');
@@ -242,7 +242,7 @@
 
     async function addSample(a, b) {
         const expected = a + b;
-        await stepGroup(`计算器数学计算：${a} + ${b}`, async () => {
+        await scenario(`计算器数学计算：${a} + ${b}`, async () => {
             await step(`点击数字${a}`);
             await step(`点击加号按钮`);
             await step(`点击数字${b}`);

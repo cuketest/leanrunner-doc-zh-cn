@@ -6,7 +6,7 @@ LeanRunner提供一组流程框架API，用来驱动RPA脚本的执行。框架A
 
 
 ```javascript
-const { step, stepGroup, Workflow, askInput } = require('leanrunner');
+const { step, scenario, Workflow, askInput } = require('leanrunner');
 ```
 
 ## 流程控制API
@@ -28,7 +28,7 @@ function defineStep(pattern: string, code: StepDefinitionCode): void
 我们来举例说明，样例为：
 
 ```javascript
-const { step, stepGroup, Workflow, defineStep } = require('leanrunner');
+const { step, scenario, Workflow, defineStep } = require('leanrunner');
 
 let count = 0;
 
@@ -45,7 +45,7 @@ defineStep("打印结果", async () => {
 })
 
 async function main() {
-    await stepGroup("计算器", async () => {
+    await scenario("计算器", async () => {
         await step('初始值设为 10');
         await step('现在再加 20');
         await step('打印结果');
@@ -98,19 +98,19 @@ step作为流程API，定义了一个流程步骤。它包含一个或两个参�
 
    由于大多数自动化操作现在都是异步的，因此`step` API和step的函数参数是异步的，其他工作流API也是如此。 这意味着为了使多个step调用按顺序运行，您应该“await”每个步骤调用。
 
-### 3. stepGroup （场景）
+### 3. scenario （场景）
 
-stepGroup函数定义了一个流程场景。它包含场景的标题和一个函数，函数内部可以调用多个步骤(step)函数。
+scenario函数定义了一个流程场景。它包含场景的标题和一个函数，函数内部可以调用多个步骤(step)函数。
 
 ```javascript
-   async stepGroup(title: string, group: async () => Promise<void>)
+   async scenario(title: string, group: async () => Promise<void>)
 ```
 
 ### 4. run （执行流程）
 
-`step`和`stepGroup`都是流程API，属于Workflow对象，同时也提供了直接调用的方法，即不带“Workflow.”前缀。
+`step`和`scenario`都是流程API，属于Workflow对象，同时也提供了直接调用的方法，即不带“Workflow.”前缀。
 
-另一个属于Workflow的方法为`run`，它可以运行一个函数作为流程。函数中可以有多个step和stepGroup的调用。
+另一个属于Workflow的方法为`run`，它可以运行一个函数作为流程。函数中可以有多个`step`和`scenario`的调用。
 
 ### 流程API的作用
 

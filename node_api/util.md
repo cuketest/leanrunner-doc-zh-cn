@@ -17,6 +17,8 @@ class Util {
     static takeScreenshot(filePath: string = null, monitor: number = 0): string | void;
     static loadCsvFile(filePath: string): Promise<RowCsv[]>;
     static saveToCsvFile(rows: RowCsv[], filePath: string): boolean;
+    static getClipboard(): Promise<string>;
+    static setClipboard(text: string): Promise<void>;
 }
 ```
 
@@ -107,7 +109,7 @@ Art,Venere,"Chemel, James L Cpa",NJ,8014
 在得到json格式的数据后，可以再使用`saveToCsvFile(rows, filePath)`函数将数据保存为csv文件。
 
 ```javascript
-    function saveToCsvFile(rows: RowCsv[], filePath: string): boolean;
+    Util.saveToCsvFile(rows: RowCsv[], filePath: string): boolean;
 ```
 
   * 参数`rows`为行数据，它的键为列名，值为单元格中的元素；
@@ -124,3 +126,24 @@ Art,Venere,"Chemel, James L Cpa",NJ,8014
 ```  
 
 运行结束后可以在根目录下看到新生成的`data_bak.csv`文件，打开可以看到里面的内容和上一步的`data.csv`文件内容一致。
+
+* **剪贴板操作**
+
+`getClipboard`获取剪贴板中的文本内容，`setClipboard`将文本内容设置到剪贴板中：
+
+```js
+    Util.getClipboard(): Promise<string>;
+    Util.setClipboard(text: string): Promise<void>;
+```
+
+例如：
+
+```js
+(async function() {
+
+    await Util.setClipboard('(🦄)');
+    let text = await Util.getClipboard();
+
+    console.log(text);
+})();
+```
