@@ -5,6 +5,9 @@
     "pdf": {
         "fontSize": 16
     },
+    "variables": {
+        "product": "LeanRunner"
+    },
     "links": {
         "gitbook": false,
         "sharing": {

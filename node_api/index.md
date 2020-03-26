@@ -8,6 +8,7 @@
 
    * [基本操作API](node_basic.md)
    * [对象操作API](node_operations.md)
+     * [模拟按键输入pressKeys方法](pressKeys.md)
    * [获取对象API](node_container.md)
    * [虚拟控件API](virtual_api.md)
    * [描述模式](descriptive_mode.md)
