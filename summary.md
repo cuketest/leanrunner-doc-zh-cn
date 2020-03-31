@@ -24,6 +24,7 @@
     * [图像操作API](/node_api/image.md)
     * [Util(常用工具函数)](/node_api/util.md)
     * [互操作API库](/shared/orchestrate.md)
+        * [API自动化库-got](/node_api/api_got.md)
         * [数据库访问](/shared/database.md)
         * [Excel的读取](/shared/excel.md)
         * [Pdf的读取](/shared/pdf.md)
