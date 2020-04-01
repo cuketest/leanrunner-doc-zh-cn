@@ -28,7 +28,7 @@
 4. 其它互操作API
    
    1. "leanpro.got"
-      封装了got库，提供了API自动化的操作，具体API帮助文档可参考[API自动化库-gott](api_got.md)
+      封装了got库，提供了API自动化的操作，具体API帮助文档可参考[API自动化库-got](api_got.md)
 
    2. "leanpro.mail"
       提供了邮件发送的功能。参考[邮件发送](/shared/mailer.md)。

@@ -45,7 +45,7 @@
     * [工作台](/server/workbench.md)
     * [用户及权限](/server/user_manage.md)
     * [资源和配置](/server/config.md)
-    * [许可证书管理](/server/license.md)
+    * [软件许可及用量](/server/license.md)
     * [LeanRunner控制器的安装](/server/controller_install.md)
     * [LeanRunner机器人](/server/robot.md)
 7. [安装与样例](/misc/install.md)
