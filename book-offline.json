@@ -6,7 +6,8 @@
         "fontSize": 16
     },
     "variables": {
-        "product": "LeanRunner"
+        "product": "LeanRunner",
+        "test_object": "模型对象"
     },
     "links": {
         "gitbook": false,
@@ -27,5 +28,8 @@
             "bookmark": "assets/images/favicon.ico",
             "appleTouch": "assets/images/apple-touch-icon.png"
         }
+    },
+    "styles": {
+        "website": "styles/website.css"
     }
 }

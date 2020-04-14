@@ -6,7 +6,8 @@
         "fontSize": 16
     },
     "variables": {
-        "product": "LeanRunner"
+        "product": "LeanRunner",
+        "test_object": "模型对象"
     },
     "links": {
         "gitbook": false,
@@ -37,6 +38,8 @@
             "distractionFreeMode": false,
             "language": "zh-CN"
         }
-
+    },
+    "styles": {
+        "website": "styles/website.css"
     }
 }

@@ -96,7 +96,7 @@ getControls常用于以下场景：
 
 ### get[ControlType]
 
-其中，针对每个控件类型都提供了一个方法，该方法返回这种类型控件的测试对象。例如，Button控件可以通过`getButton`方法获得，List控件可以通过`getList`方法获得。
+其中，针对每个控件类型都提供了一个方法，该方法返回这种类型控件的{{book.test_object}}。例如，Button控件可以通过`getButton`方法获得，List控件可以通过`getList`方法获得。
 
 这些API对象调用后返回的是另一个子容器对象，意味着可以对这些对象级联调用这些容器API，获得控件树更深层次的对象。
 

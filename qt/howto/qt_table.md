@@ -23,7 +23,7 @@ Qt 5.x:
         - Header 表头控件，无法编辑
         - DataItem 单元格控件，双击后可编辑
 ```
-从模型管理器识别到的测试对象树中也可以看出来表格中的结构。  
+从模型管理器识别到的对象树中也可以看出来表格中的结构。  
 
 ![Qt 4.x SpreadSheet中识别到的对象树](assets/table/nodetree_model.png)  
 ![Qt 5.x SpreadSheet中识别到的对象树](assets/table/nodetree_qt5.png)  

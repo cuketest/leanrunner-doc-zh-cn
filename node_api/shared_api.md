@@ -1,4 +1,4 @@
-## 常见的API方法
+## 对象共有的方法和属性
 
 #### click
 ```javascript
@@ -80,7 +80,7 @@ filePath传入文件路径，即截图保存的位置，当传入实际路径时
 ```javascript
 pressKeys(keys: string): Promise<void>;
 ```
-按一个或多个按键，特殊按键值请参见附录：输入键对应表。例如：键值可以是"Good morning,{DELETE}"
+按一个或多个按键，特殊按键值请参见[附录：输入键对应表](/misc/key_codes.md)。例如：键值可以是"Good morning,{DELETE}"
 
 pressKeys不切换中文输入法，直接输入中文或英文。但如果你是打开中文输入法，输英文会被中文输入法截获，可能造成混乱。请在自动化前关闭中文输入法。
 

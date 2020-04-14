@@ -37,7 +37,7 @@ interface InputInquiryInfo {
 * **waitSeconds**：可选项，对话框等待时间，如果设置了，askInput就会在等待时间结束后返回，如果不设置会永久等待。
 
 其中：
-* 为获得base64Image所需的base64编码的图片，在Selenium web自动化中，可直接调用[driver.takeScreenshot()](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html)；在Windows自动化中，可调用测试对象的[takeScreenshot()](/node_api/shared_api.md#takeScreenshots)。如果从文件中读取，可以调用fs.readFileSync读取内容到buffer，再调用`buf.toString('base64')`转换成base64字符串。
+* 为获得base64Image所需的base64编码的图片，在Selenium web自动化中，可直接调用[driver.takeScreenshot()](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html)；在Windows自动化中，可调用{{book.test_object}}的[takeScreenshot()](/node_api/shared_api.md#takeScreenshots)。如果从文件中读取，可以调用fs.readFileSync读取内容到buffer，再调用`buf.toString('base64')`转换成base64字符串。
 * waitSeconds参数可结合defaultValue一起使用，设置缺省值和等待时间，如果用户响应了，返回用户设置的值，如果用户没有在设置时间间隔内响应，返回缺省值。
 
 下面提供了函数的样例代码：

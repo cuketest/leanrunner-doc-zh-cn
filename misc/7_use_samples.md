@@ -8,9 +8,8 @@ SimpleStyles界面包含了基本所有典型控件。安装包提供了测试�
 
 运行样例步骤。
 1.	Windows =>运行窗口，输入“cmd”，打开命令行窗口
-2.	用cd命令，目录定位到C:\Program Files (x86)\LeanRunner\samples下 
+2.	用cd命令，目录定位到C:\Program Files (x86)\LeanPro\LeanRunner\samples下 
 3.	命令行中运行起SimpleStyles.exe
-4.	命令行中运行“cscript.exe SimpleStyles_TestScript.vbs”命令脚本，会自动执行自动化操作。
 
 在LeanRunner Lite中，样例应用可以通过编辑器中“帮助” => “打开样例” 的菜单打开：
 
@@ -29,6 +28,3 @@ SimpleStyles界面包含了基本所有典型控件。安装包提供了测试�
 * SimpleStyles (SimpeStyles应用自动化样例)
 
 更多的样例程序可在 [LeanRunner Github](https://github.com/cuketest/leanrunner)网站获得。
-
-
-

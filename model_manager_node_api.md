@@ -2,7 +2,7 @@
     * [模型管理器(Model Manager)概述](/model_mgr/model_manager.md)
     * [对象模型管理器配置](/model_mgr/model_options.md)
     * [侦测控件及对象添加](/model_mgr/control_spy.md)
-    * [测试对象操作](/model_mgr/obj_actions.md)
+    * [模型中对象操作](/model_mgr/obj_actions.md)
     * [虚拟控件](//model_mgr/virtual_control.md)
     * [代码生成及运行](/model_mgr/code_generation.md)
 
@@ -11,6 +11,7 @@
     * [对象操作API](/node_api/node_operations.md)
       * [模拟按键输入pressKeys方法](/node_api/pressKeys.md)
     * [获取对象API](/node_api/node_container.md)
+    * [对象共有的方法和属性](/node_api/shared_api.md)
     * [Java应用自动化](/node_api/java/java_basic.md)
     * [虚拟控件API](/node_api/virtual_api.md)
     * [描述模式](/node_api/descriptive_mode.md)

@@ -8,7 +8,7 @@ const { TestModel, Auto } = require('leanpro.win');
 
 ### Auto
 
-Auto对象用来通过[描述模式](descriptive_mode.md)获取测试对象，无需加载对象模型。
+Auto对象用来通过[描述模式](descriptive_mode.md)直接生成{{book.test_object}}，无需加载对象模型。
 
 ### TestModel
 

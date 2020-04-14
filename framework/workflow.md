@@ -1,6 +1,6 @@
 # 流程框架API
 
-LeanRunner提供一组流程框架API，用来驱动RPA脚本的执行。框架API分为两类，[流程控制API](framework.md)和[平台API](server_api.md)。
+LeanRunner提供一组流程框架API，用来驱动RPA脚本的执行。框架API分为两类，[流程控制API](#workflow_api)和[平台API](server_api.md)。
 
 框架API在名为“leanrunner”的执行库中。下面是引入该库的样例，请根据需要引入合适的API。
 
@@ -8,6 +8,8 @@ LeanRunner提供一组流程框架API，用来驱动RPA脚本的执行。框架A
 ```javascript
 const { step, scenario, Workflow, askInput } = require('leanrunner');
 ```
+
+<a id="workflow_api">
 
 ## 流程控制API
 
